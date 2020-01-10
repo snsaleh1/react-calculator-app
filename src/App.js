@@ -9,8 +9,13 @@ class App extends Component {
 
     this.state = {
       input: ''
-    }
+    };
   }
+
+  addToInput = val => {
+    this.setState({input: this.state.input + val});
+  }
+
   render() {
     return (
       <div className="app">
